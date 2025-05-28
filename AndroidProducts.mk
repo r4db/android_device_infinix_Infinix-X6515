@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_Infinix-X6515.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_Infinix-twrp-user \
-    omni_Infinix-twrp-userdebug \
-    omni_Infinix-twrp-eng
+    twrp_Infinix-twrp-user \
+    twrp_Infinix-twrp-userdebug \
+    twrp_Infinix-twrp-eng
