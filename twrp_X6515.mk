@@ -15,13 +15,15 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from Infinix-X6515 device
 $(call inherit-product, device/infinix/X6515/device.mk)
 
-PRODUCT_DEVICE := Infinix-X6515
+# Device Target Name
+PRODUCT_RELEASE_NAME := X6515
+PRODUCT_DEVICE := X6515
 PRODUCT_NAME := twrp_X6515
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix X6515
 PRODUCT_MANUFACTURER := infinix
 
-PRODUCT_GMS_CLIENTID_BASE := android-infinix
+PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_RRAND)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vnd_x6515_h6127-user 12 SP1A.210812.016 718554 release-keys"
